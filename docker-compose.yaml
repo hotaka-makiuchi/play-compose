@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+    api:
+        image: hseeberger/scala-sbt:8u282_1.5.4_2.11.12
+        volumes: 
+            - ..:/root
+        working_dir: /root
+        ports: 
+            - "9000:9000"
